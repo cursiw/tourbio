@@ -1,0 +1,139 @@
+{
+  "identity": {
+    "name": "E1",
+    "role": "The Anti-AI Designer",
+    "mission": "Create a top 1% Free Fire tournament platform that breaks generic 'gamer' tropes with high-fashion/tactical aesthetics."
+  },
+  "project_context": {
+    "app_name": "Free Fire Tournament Platform",
+    "app_type": "Esports & Community",
+    "target_audience": "Gen Z Gamers, Competitive Guilds, Tournament Organizers",
+    "emotional_tone": "Adrenaline, Tactical, Aggressive, Community-Driven",
+    "visual_style": "Cyberpunk Tactical (Battle Royale Neon)",
+    "tech_stack": "React (JS), Tailwind CSS, Shadcn UI, Framer Motion"
+  },
+  "typography": {
+    "primary_font": "Chakra Petch",
+    "secondary_font": "Rajdhani",
+    "usage_rules": {
+      "headings": "font-chakra font-bold uppercase tracking-wider",
+      "body": "font-rajdhani font-medium tracking-wide",
+      "labels": "font-chakra font-semibold text-xs uppercase tracking-[0.2em]",
+      "hero_text": "text-6xl md:text-8xl font-black italic uppercase leading-[0.85]"
+    },
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+  },
+  "colors": {
+    "palette": {
+      "background": "#050505",
+      "foreground": "#FFFFFF",
+      "primary": "#FF9900",
+      "primary_foreground": "#000000",
+      "secondary": "#00F0FF",
+      "accent": "#BC13FE",
+      "muted": "#1A1A1A",
+      "border": "#333333",
+      "success": "#00FF94",
+      "destructive": "#FF3B30"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #FF9900 0%, #FF5500 100%)",
+      "glow": "radial-gradient(circle at center, rgba(255, 153, 0, 0.15) 0%, transparent 70%)",
+      "glass": "linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%)"
+    },
+    "rules": {
+      "dark_mode_only": true,
+      "no_gradients_on_text": false,
+      "neon_glows": "Use box-shadow for neon effects, not just color."
+    }
+  },
+  "layout_strategy": {
+    "marketing": {
+      "grid_type": "Tetris Grid (Mode A)",
+      "spacing": "Generous (p-8 to p-24)",
+      "container_style": "Asymmetric, overlapping elements, parallax backgrounds"
+    },
+    "dashboard": {
+      "grid_type": "High Density Grid (Mode B)",
+      "spacing": "Tight (gap-4, p-6)",
+      "container_style": "HUD Interface, Glassmorphism panels, sharp borders"
+    },
+    "spacing_scale": {
+      "section_gap": "py-24 md:py-32",
+      "component_gap": "gap-6 md:gap-8"
+    }
+  },
+  "component_styles": {
+    "cards": {
+      "style": "Cyberpunk Cut",
+      "classes": "relative bg-card/50 backdrop-blur-md border border-white/10 overflow-hidden hover:border-primary/50 transition-colors duration-300",
+      "decoration": "Add a 45deg cut on the top-right corner using clip-path or pseudo-element."
+    },
+    "buttons": {
+      "primary": "bg-primary text-black font-bold uppercase tracking-widest hover:bg-primary/90 skew-x-[-10deg] px-8 py-6 rounded-none",
+      "secondary": "border border-primary text-primary font-bold uppercase tracking-widest hover:bg-primary/10 skew-x-[-10deg] px-8 py-6 rounded-none",
+      "ghost": "text-white/70 hover:text-white hover:bg-white/5 uppercase tracking-wider"
+    },
+    "inputs": {
+      "style": "Tactical Field",
+      "classes": "bg-black/50 border-white/20 focus:border-primary focus:ring-1 focus:ring-primary/50 rounded-none h-12 font-rajdhani"
+    },
+    "brackets": {
+      "style": "Neon Lines",
+      "connector_color": "#333333",
+      "active_connector_color": "#FF9900"
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Use a subtle 'noise' overlay on the main background (opacity 0.03).",
+    "borders": "1px solid borders with 10% opacity white. Active elements get 100% opacity primary color border.",
+    "shadows": "shadow-[0_0_20px_rgba(255,153,0,0.3)] for primary actions.",
+    "decorations": "Use 'crosshair' icons (+) in corners of cards for tactical feel."
+  },
+  "image_assets": {
+    "hero_bg": {
+      "url": "https://images.pexels.com/photos/7862599/pexels-photo-7862599.jpeg",
+      "alt": "Esports Arena Stage",
+      "usage": "Hero section background with heavy dark overlay"
+    },
+    "gamer_focus": {
+      "url": "https://images.pexels.com/photos/9071735/pexels-photo-9071735.jpeg",
+      "alt": "Focused Gamer",
+      "usage": "Registration or Profile section"
+    },
+    "trophy": {
+      "url": "https://images.pexels.com/photos/6370106/pexels-photo-6370106.jpeg",
+      "alt": "Golden Trophy",
+      "usage": "Tournament Winners or Leaderboard section"
+    },
+    "abstract_neon": {
+      "url": "https://images.pexels.com/photos/35013580/pexels-photo-35013580.jpeg",
+      "alt": "Neon Abstract",
+      "usage": "Section backgrounds or card patterns"
+    }
+  },
+  "motion_guidelines": {
+    "library": "framer-motion",
+    "entrance": "Staggered fade-in-up for lists (0.05s delay).",
+    "hover": "Scale 1.02 + Border Color Change + Glow Increase.",
+    "page_transition": "Fade out (0.3s) -> Fade in (0.3s).",
+    "scroll": "Parallax on background images. Reveal animations for sections."
+  },
+  "accessibility_rules": {
+    "contrast": "Ensure text is #E0E0E0 or lighter on dark backgrounds.",
+    "focus_states": "Visible ring-2 ring-primary on all interactive elements.",
+    "reduced_motion": "Respect prefers-reduced-motion media query."
+  },
+  "universal_guidelines": [
+    "DO NOT use gradients for text unless it's a massive headline.",
+    "DO NOT use generic 'Inter' font. Use Chakra Petch/Rajdhani.",
+    "DO NOT center everything. Use asymmetry.",
+    "DO NOT use complete transparent backgrounds. Use bg-black/80 with backdrop-blur.",
+    "ALWAYS add data-testid to interactive elements.",
+    "ALWAYS use 'sonner' for toasts.",
+    "ALWAYS use 'lucide-react' for icons.",
+    "Use 2-3x more spacing than typical designs.",
+    "Dark mode is mandatory. No light mode toggle."
+  ],
+  "instructions_to_main_agent": "You are building a high-energy esports platform. Start by setting up the font imports in index.css. Then, customize the tailwind.config.js with the colors and fonts provided. Build the layout using the 'Tetris' grid for the landing page and 'High Density' grid for the dashboard. Use the provided image URLs. Focus on the 'Tactical' aesthetic—sharp edges, neon accents, and dark backgrounds."
+}
